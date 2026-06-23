@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bienvenue sur le programme ambassadeur {{ params.brand_name }}</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Karla',Arial,sans-serif;background:#E8E8EB;color:#0D142C;}
+table{border-collapse:collapse;}
+img{border:0;display:block;}
+a{text-decoration:none;}
+</style>
+</head>
+<body style="margin:0;padding:0;background:#E8E8EB;">
+
+<!-- HEADER -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+  style="background-image:url('https://i.imgur.com/JUXGqPa.png');background-size:cover;background-position:center;max-width:600px;margin:0 auto;height:200px;">
+  <tr>
+    <td style="padding:20px 28px;text-align:center;vertical-align:middle;">
+      <img src="https://i.imgur.com/AEYc1MW.png" alt="Shop My Influence" style="width:200px;max-width:65%;display:inline-block;margin-bottom:10px;">
+      <h1 style="font-size:22px;font-weight:900;color:white;line-height:1.1;text-transform:uppercase;letter-spacing:-0.5px;text-shadow:0 2px 10px rgba(0,0,0,0.4);">
+        PROGRAMME AMBASSADEUR<br><span style="color:#FFCE53;">{{ params.brand_name }}</span>
+      </h1>
+    </td>
+  </tr>
+</table>
+
+<!-- BARRE COULEUR -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;">
+  <tr><td style="height:5px;background:linear-gradient(90deg,#7B59F5,#FF7131,#B81CCB);"></td></tr>
+</table>
+
+<!-- CORPS -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F9F9FB;max-width:600px;margin:0 auto;">
+  <tr>
+    <td style="padding:36px 30px 28px;">
+
+      <!-- Badge -->
+      <div style="display:inline-block;background:#7B59F5;color:white;font-size:10px;font-weight:900;padding:5px 14px;text-transform:uppercase;letter-spacing:1px;border-radius:20px;margin-bottom:20px;">✓ CANDIDATURE APPROUVÉE</div>
+
+      <!-- Titre -->
+      <h2 style="font-size:22px;font-weight:900;color:#0D142C;line-height:1.2;margin-bottom:18px;letter-spacing:-0.5px;text-transform:uppercase;">
+        FÉLICITATIONS<br><span style="color:#7B59F5;">{{ contact.FIRSTNAME }} !</span>
+      </h2>
+
+      <!-- Message principal -->
+      <p style="font-size:14px;color:#444;line-height:1.75;margin-bottom:20px;">
+        <strong style="color:#0D142C;">{{ params.brand_name }}</strong> a approuvé ta demande de participation à son programme ambassadeur. Tu fais désormais partie de la communauté de créateurs sélectionnés par la marque sur <strong>Shop My Influence</strong>.
+      </p>
+
+      <!-- Encadré violet -->
+      <div style="background:#EDE8FE;border-left:5px solid #7B59F5;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:28px;">
+        <p style="font-size:13px;color:#5B3FD4;font-weight:700;line-height:1.6;margin:0;">
+          Connecte-toi à ton application SMI pour accéder à la campagne, obtenir ton lien personnalisé et commencer à générer des ventes.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center;margin-bottom:8px;">
+        <a href="https://shopmyinfluence.page.link/install" style="display:inline-block;padding:12px 32px;background:#7B59F5;color:white;font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-radius:5px;">ACCÉDER À MA CAMPAGNE →</a>
+      </div>
+
+    </td>
+  </tr>
+</table>
+
+<!-- FOOTER -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0D142C;max-width:600px;margin:0 auto;">
+  <tr>
+    <td style="padding:20px 30px;text-align:center;">
+      <p style="font-size:13px;color:rgba(255,255,255,0.7);margin:0 0 10px;line-height:1.5;">Une question ? L'équipe Shop My Influence est disponible pour toi.</p>
+      <a href="mailto:all@shopmyinfluence.fr" style="display:inline-block;padding:9px 24px;background:#FF7131;color:white;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:1px;border-radius:5px;margin-bottom:14px;">CONTACTEZ-NOUS</a>
+      <p style="font-size:9px;color:rgba(255,255,255,0.3);margin:0;text-transform:uppercase;letter-spacing:1px;">À très bientôt — La team SMI 👋 • © 2026</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
